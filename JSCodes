@@ -1,0 +1,54 @@
+HTML code
+<html>
+<head><title>Page</title>
+</head>
+<script>
+
+function book_name()
+{
+var name = document.getElementById("book").value;
+if( name == "history" ) {
+               document.write("<b>History Book</b>");
+            } else if( name == "maths" ) {
+               document.write("<b>Maths Book</b>");
+            } else if( name == "economics" ) {
+               document.write("<b>Economics Book</b>");
+            } else {
+               document.write("<b>Unknown Book</b>");
+            }
+}
+</script>
+<body>
+name of book: <input type="text" name="book" id="book"><br>
+<input type=button onClick="book_name()" value="submit">
+</body>
+</html>
+
+
+
+
+Scripting
+      <script type = "text/javascript">
+         function book_name()
+         {
+            var book = document.getElementById("book").value;
+            if( book == "history" ) {
+               document.write("<b>History Book</b>");
+            }
+         
+            else if( book == "maths" ) {
+               document.write("<b>Maths Book</b>");
+            }
+         
+            else if( book == "economics" ) {
+               document.write("<b>Economics Book</b>");
+            }
+         
+            else {
+               document.write("<b>Unknown Book</b>");
+            }
+         }    
+    
+      </script>
+      name of book: <input type="text" name="book" id="book">
+<input type=button onClick="book_name()" value="submit">
